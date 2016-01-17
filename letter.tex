@@ -3,6 +3,48 @@
 \pdfminorversion=4      % required for PDF/A-1 because PDF/A-1 is based on PDF 1.4
 \pdfobjcompresslevel=0  % requires pdfminorversion > 4
 
+%----------------------------------------------------------------------------------------
+%   MARGINS
+%----------------------------------------------------------------------------------------
+
+% See https://en.wikibooks.org/wiki/LaTeX/Page_Layout for details
+
+\hoffset 0mm
+\voffset 0mm
+\oddsidemargin  0mm
+\evensidemargin 0mm
+\topmargin      0mm
+\marginparsep   0mm
+\marginparwidth 0mm
+
+% Render a frame marking the margins of this document. This is for
+% debugging purposes only.
+\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%   CONTENT
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-test
+\begin{letter}{Foo}
+
+\opening{Sehr geehrter Herr Schmidt,}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet.
+
+\closing{Mit freundlichen Grüßen
+
+ACME Megacorporation GmbH}
+
+\end{letter}
 \end{document}
