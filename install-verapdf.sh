@@ -5,7 +5,7 @@ set -ex
 INSTALLPATH="$(pwd)/verapdf"
 
 wget http://downloads.verapdf.org/rel/verapdf-installer.zip
-unzip -f verapdf-installer.zip
+unzip -u verapdf-installer.zip
 rm verapdf-installer.zip
 cd verapdf-*
 
