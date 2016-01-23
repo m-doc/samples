@@ -1,6 +1,7 @@
 before_install:
  - sudo apt-get update -qq
  - sudo apt-get install -y texlive texlive-latex-extra icc-profiles
+ - export TZ=Europe/Berlin
 script:
  - sh install-verapdf.sh
  - make cleanall all validate
