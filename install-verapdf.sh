@@ -5,7 +5,8 @@ set -ex
 INSTALLPATH="$(pwd)/verapdf"
 
 wget http://downloads.verapdf.org/rel/verapdf-installer.zip
-unzip verapdf-installer.zip
+unzip -f verapdf-installer.zip
+rm verapdf-installer.zip
 cd verapdf-*
 
 cat << EOF > auto_install.xml
@@ -13,7 +14,7 @@ cat << EOF > auto_install.xml
 <AutomatedInstallation langpack="eng">
   <com.izforge.izpack.panels.htmlinfo.HTMLInfoPanel id="welcome"/>
   <com.izforge.izpack.panels.target.TargetPanel id="install_dir">
-  <installpath>$INSTALLPATH</installpath>
+    <installpath>$INSTALLPATH</installpath>
   </com.izforge.izpack.panels.target.TargetPanel>
   <com.izforge.izpack.panels.packs.PacksPanel id="sdk_pack_select">
     <pack index="0" name="veraPDF GUI" selected="true"/>
