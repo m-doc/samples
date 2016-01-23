@@ -12,7 +12,7 @@ clean:
 cleanall: clean
 	rm -f *.pdf
 
-validate:
+validate: letter.pdf
 	./verapdf/verapdf letter.pdf
 
 .PHONY: clean cleanall

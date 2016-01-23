@@ -3,4 +3,4 @@ before_install:
  - sudo apt-get install -y texlive
 script:
  - sh install-verapdf.sh
- - make cleanall all
+ - make cleanall all validate
